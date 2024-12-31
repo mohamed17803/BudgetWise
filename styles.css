@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #2D6A4F;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input, button {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #CCC;
+    border-radius: 4px;
+  }
+  
+  button {
+    background-color: #2D6A4F;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1B4332;
+  }
+  
+  #expense-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #expense-list li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px 0;
+    color: #2D6A4F;
+  }
+  
+  /* Base Media Queries for larger devices */
+  @media (max-width: 1024px) {
+    .container {
+      width: 80%;
+    }
+    
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    input, button {
+      font-size: 14px;
+    }
+  }
+  
+  /* For Tablet and Small Devices (768px - 1024px) */
+  @media (max-width: 1024px) {
+    .container {
+      width: 85%;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.4rem;
+    }
+  
+    #expense-chart {
+      width: 100%;
+    }
+  }
+  
+  /* Mobile Devices (Max-width: 600px) */
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    input, button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    #expense-list li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    #expense-chart {
+      width: 100%;
+    }
+  }
+  
